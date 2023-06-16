@@ -20,22 +20,22 @@ resource "aws_iam_role" "codedeploy_role" {
 
 resource "aws_iam_role_policy_attachment" "my_role_policy_attachment_1" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonSSMFullAccess"
-  role = aws_iam_role.codedeploy_role.name
+  role       = aws_iam_role.codedeploy_role.name
 }
 
 resource "aws_iam_role_policy_attachment" "my_role_policy_attachment_2" {
   policy_arn = "arn:aws:iam::aws:policy/CloudWatchFullAccess"
-  role = aws_iam_role.codedeploy_role.name
+  role       = aws_iam_role.codedeploy_role.name
 }
 
 resource "aws_iam_role_policy_attachment" "my_role_policy_attachment_3" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
-  role = aws_iam_role.codedeploy_role.name
+  role       = aws_iam_role.codedeploy_role.name
 }
 
 resource "aws_iam_role_policy_attachment" "my_role_policy_attachment_4" {
   policy_arn = "arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess"
-  role = aws_iam_role.codedeploy_role.name
+  role       = aws_iam_role.codedeploy_role.name
 }
 
 
@@ -62,12 +62,12 @@ resource "aws_iam_role" "codepipeline_role" {
 
 resource "aws_iam_role_policy_attachment" "my_role_policy_attachment_6" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
-  role = aws_iam_role.codepipeline_role.name
+  role       = aws_iam_role.codepipeline_role.name
 }
 
 resource "aws_iam_role_policy_attachment" "my_role_policy_attachment_7" {
   policy_arn = "arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess"
-  role = aws_iam_role.codepipeline_role.name
+  role       = aws_iam_role.codepipeline_role.name
 }
 
 
@@ -96,10 +96,10 @@ resource "aws_iam_role" "codebuild_role" {
 
 resource "aws_iam_role_policy_attachment" "my_role_policy_attachment_8" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
-  role = aws_iam_role.codebuild_role.name
+  role       = aws_iam_role.codebuild_role.name
 }
 
 resource "aws_iam_role_policy_attachment" "my_role_policy_attachment_10" {
   policy_arn = "arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess"
-  role = aws_iam_role.codebuild_role.name
+  role       = aws_iam_role.codebuild_role.name
 }
