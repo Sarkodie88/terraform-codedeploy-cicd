@@ -1,7 +1,4 @@
 # terraform-codedeploy-pipelines
-This example shows how to create code deploy applications and deployment groups using terraform
-
-
 This is a Terraform boilerplate for setting up a basic CI/CD deploying applications using codepipeline and ec2 instances. The purpose of this project is to provide a starting point for anyone looking to deploy applications on EC2 instances using AWS developer tools including CodeCommit, CodeBuild, CodeDeploy.
 
 ## Features
