@@ -50,7 +50,7 @@ resource "aws_codepipeline" "pipelines" {
   }
 
   stage {
-    name = "Deploy"
+    name = "Staging"
 
     action {
       run_order       = 1
@@ -89,7 +89,7 @@ resource "aws_codepipeline" "pipelines" {
   }
 
   stage {
-    name = "LIVE"
+    name = "PROD"
 
     action {
       run_order       = 1

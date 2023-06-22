@@ -9,32 +9,32 @@ codedeploy_applications = {
   "my-instance-1" = {
     ami                        = "frontend-application"
     compute_platform           = "Server"
-    uat_deployment_group_name  = "UAT"
-    live_deployment_group_name = "LIVE"
+    uat_deployment_group_name  = "Staging"
+    live_deployment_group_name = "Production"
     deployment_branch          = "master"
     uat_ec2_deployment_tags_set = {
       deployment_tag_key   = "DeploymentTag"
-      deployment_tag_value = "frontend-uat"
+      deployment_tag_value = "frontend-staging"
     }
     live_ec2_deployment_tags_set = {
       deployment_tag_key   = "DeploymentTag"
-      deployment_tag_value = "frontend-live"
+      deployment_tag_value = "frontend-prod"
     }
   }
 
   "backend-application" = {
     application_name           = "backend-application"
     compute_platform           = "Server"
-    uat_deployment_group_name  = "UAT"
-    live_deployment_group_name = "LIVE"
+    uat_deployment_group_name  = "Staging"
+    live_deployment_group_name = "Production"
     deployment_branch          = "master"
     uat_ec2_deployment_tags_set = {
       deployment_tag_key   = "DeploymentTag"
-      deployment_tag_value = "backend-uat"
+      deployment_tag_value = "backend-staging"
     }
     live_ec2_deployment_tags_set = {
       deployment_tag_key   = "DeploymentTag"
-      deployment_tag_value = "backend-live"
+      deployment_tag_value = "backend-prod"
     }
   }
 }
