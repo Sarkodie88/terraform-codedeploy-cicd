@@ -25,7 +25,7 @@ The configuration is designed to be easily customizable and extensible, allowing
 
 1. Clone the repository:
    ```sh
-   git clone repository_url
+   git clone https://github.com/Sarkodie88/terraform-codedeploy-cicd.git
    ```
 2. Initialize terraform
    ```sh
