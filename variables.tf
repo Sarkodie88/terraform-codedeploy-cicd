@@ -28,6 +28,11 @@ variable "build_log_group_name" {
 }
 
 
+variable "s3_artifact_store" {
+  type     = string
+  nullable = false
+}
+
 variable "codedeploy_applications" {
   type = map(object({
     application_name           = string

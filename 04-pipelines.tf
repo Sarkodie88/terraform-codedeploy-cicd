@@ -5,7 +5,7 @@ resource "aws_codepipeline" "pipelines" {
 
   role_arn = aws_iam_role.codepipeline_role.arn
   artifact_store {
-    location = "nat-test-tf-bucket"
+    location = var.s3_artifact_store
     type     = "S3"
 
   }

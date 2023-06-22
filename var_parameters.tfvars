@@ -3,6 +3,7 @@ codepipeline_role_name = "universal-codepipeline-role"
 codebuild_role_name    = "universal-codebuild-role"
 build_project_name     = "universal-build-project"
 build_log_group_name   = "universal-build-logs"
+s3_artifact_store = "s3-bucket-name"
 
 codedeploy_applications = {
   "my-instance-1" = {
