@@ -35,15 +35,15 @@ The configuration is designed to be easily customizable and extensible, allowing
 
 4.  Verification of the configuration
     ```sh
-    terraform plan -var-file=var.tfvars
+    terraform plan -var-file=var_parameters.tfvars
     ```
 5. Deploy
     ```sh
-    terraform apply -var-file=var.tfvars
+    terraform apply -var-file=var_parameters.tfvars
     ```
 6. Destroy
     ```sh
-    terraform destroy -var-file=var.tfvars
+    terraform destroy -var-file=var_parameters.tfvars
     ```
 
 
